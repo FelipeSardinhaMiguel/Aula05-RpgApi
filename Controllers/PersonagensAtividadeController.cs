@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using RpgAPI.Models;
 using RpgAPI.Models.Enuns;
 
@@ -11,7 +12,7 @@ namespace RpgAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class PersonagensController : ControllerBase
+    public class PersonagensAtividadeController : Controller
     {
         private static List<Personagem> personagens = new List<Personagem>()
         {
@@ -24,57 +25,46 @@ namespace RpgAPI.Controllers
             new Personagem() { Id = 6, Nome = "Celeborn", PontosVida=100, Forca=21, Defesa=13, Inteligencia=34, Classe=ClasseEnum.Clerigo },
             new Personagem() { Id = 7, Nome = "Radagas7t", PontosVida=100, Forca=25, Defesa=11, Inteligencia=35, Classe=ClasseEnum.Mago }
         };
-        
 
-        [HttpGet("Get")]
-        public IActionResult GetFirst()
+        [HttpGet("GetOrdenado")]
+        public IActionResult GetOrdem()
         {
-            Personagem p = personagens [0];
-            return Ok(p);
+            List<Personagem> listaFinal = personagens.OrderBy (p => p.Forca).ToList();
+            return Ok(listaFinal);
         }
 
-        [HttpGet("GetAll")]
-        public IActionResult Get()
+        /*[HttpGet("GetContagem")]
+        public IActionResult GetQuantidade()
         {
-            return Ok(personagens);
-        }
-
-        [HttpGet("id{id}")]
-        public IActionResult GetSingle(int id)
-        {
-            return Ok(personagens.FirstOrDefault(pe=> pe.Id == id));
-        }
-
-        [HttpPost]
-        public IActionResult AddPersonagem(Personagem novoPersonagem)
-        {
-            personagens.Add(novoPersonagem);
-            return Ok(personagens);
-        }
-
-        [HttpPut]
-        public IActionResult UpdatePersonagem(Personagem p)
-        {
-            Personagem personagemAlterado = personagens.Find(pers => pers.Id == p.Id);
-            personagemAlterado.Nome = p.Nome;
-            personagemAlterado.PontosVida = p.PontosVida;
-            personagemAlterado.Forca = p.Forca;
-            personagemAlterado.Defesa = p.Defesa;
-            personagemAlterado.Inteligencia = p.Inteligencia;
-            personagemAlterado.Classe = p.Classe;
-
-            return Ok(personagens);
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            personagens.RemoveAll(pers => pers.Id == id);
-
-            return Ok(personagens);
-        }
-
             
+        }*/
+
+
+
+
+
+
+
+
+
+
+
+        [HttpGet("GetByNome/{nome}")]
+        public IActionResult PegarNome(string nome)
+        {
+            List<Personagem> BuscaNome = personagens.FindAll(p => p.Nome == nome).ToList();
+
+            if(BuscaNome == null)
+            {
+                Console.WriteLine("Este personagem não existe");
+            }
+
+            return Ok(BuscaNome);
+
+        }
+
+
+
 
 
 

@@ -1,0 +1,9 @@
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\RpgAPI.exe
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\appsettings.Development.json
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\appsettings.json
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\RpgAPI.dll
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\RpgAPI.deps.json
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\RpgAPI.runtimeconfig.json
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\RpgAPI.pdb
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\Microsoft.AspNetCore.OpenApi.dll
+D:\2DS\Felipe2DS\DS\RpgAPI\Publicacao\Microsoft.OpenApi.dll

@@ -31,3 +31,10 @@ D:\2DS\Felipe2DS\DS\RpgAPI\obj\Debug\net9.0\refint\RpgAPI.dll
 D:\2DS\Felipe2DS\DS\RpgAPI\obj\Debug\net9.0\RpgAPI.pdb
 D:\2DS\Felipe2DS\DS\RpgAPI\obj\Debug\net9.0\RpgAPI.genruntimeconfig.cache
 D:\2DS\Felipe2DS\DS\RpgAPI\obj\Debug\net9.0\ref\RpgAPI.dll
+D:\2DS\Felipe2DS\DS\RpgAPI\obj\Debug\net9.0\RpgAPI.sourcelink.json
+D:\2DS\Felipe2DS\DS\RpgAPI\bin\Debug\net9.0\Publicacao\web.config
+D:\2DS\Felipe2DS\DS\RpgAPI\bin\Debug\net9.0\Publicacao\appsettings.Development.json
+D:\2DS\Felipe2DS\DS\RpgAPI\bin\Debug\net9.0\Publicacao\appsettings.json
+D:\2DS\Felipe2DS\DS\RpgAPI\bin\Debug\net9.0\Publicacao\RpgAPI.deps.json
+D:\2DS\Felipe2DS\DS\RpgAPI\bin\Debug\net9.0\Publicacao\RpgAPI.runtimeconfig.json
+D:\2DS\Felipe2DS\DS\RpgAPI\bin\Debug\net9.0\Publicacao\RpgAPI.staticwebassets.endpoints.json
