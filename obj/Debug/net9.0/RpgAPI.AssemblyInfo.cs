@@ -10,11 +10,10 @@
 using System;
 using System.Reflection;
 
-[assembly: 
-System.Reflection.AssemblyCompanyAttribute("RpgAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("RpgAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb3cf907d3dcaeea9e7ae3c129323beccc27ab45")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7914a61d3c27d341851c1bec15e4c30a340a295")]
 [assembly: System.Reflection.AssemblyProductAttribute("RpgAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RpgAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

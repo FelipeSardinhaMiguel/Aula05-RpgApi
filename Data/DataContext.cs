@@ -39,13 +39,13 @@ namespace RpgAPI.Data
             modelBuilder.Entity<Arma>().ToTable("TB_ARMAS");
             modelBuilder.Entity<Arma>().HasData
             (
-                new Arma() { Id = 1, Nome = "Treisoitão", Dano = 38, Tipo = "Meido Alcance"},
-                new Arma() { Id = 2, Nome = "M4", Dano = 30, Tipo = ""},
-                new Arma() { Id = 3, Nome = "AK47", Dano = 40, Tipo = ""},
-                new Arma() { Id = 4, Nome = "Coquetel Molotov", Dano = 5*7, Tipo = ""},
-                new Arma() { Id = 5, Nome = "Lança Chamas", Dano = 10*13, Tipo = ""},
-                new Arma() { Id = 6, Nome = "Espada de Grama", Dano = 70, Tipo = ""},
-                new Arma() { Id = 7, Nome = "Ominitrix", Dano = 100, Tipo = ""}
+                new Arma() { Id = 1, Nome = "Treisoitão", Dano = 38, Tipo = "Medio Alcance"},
+                new Arma() { Id = 2, Nome = "M4", Dano = 30, Tipo = "Longo Alcance"},
+                new Arma() { Id = 3, Nome = "AK47", Dano = 40, Tipo = "Longo Alcance"},
+                new Arma() { Id = 4, Nome = "Coquetel Molotov", Dano = 5*7, Tipo = "Arremessável"},
+                new Arma() { Id = 5, Nome = "Lança Chamas", Dano = 10*13, Tipo = "Longo alcance"},
+                new Arma() { Id = 6, Nome = "Espada de Grama", Dano = 70, Tipo = "Corpo a corpo"},
+                new Arma() { Id = 7, Nome = "Ominitrix", Dano = 100, Tipo = "Corpo a Corpo"}
             );
 
         }
