@@ -38,7 +38,7 @@ namespace RpgAPI.Controllers
         {
             
         }*/
-
+        
 
 
 
@@ -67,7 +67,7 @@ namespace RpgAPI.Controllers
 
 
 
-
+        
 
     }
 }
