@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "RpgAPI/1.0.0": {
+      "RpgApi/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "9.0.1",
           "Microsoft.EntityFrameworkCore.Design": "9.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9"
         },
         "runtime": {
-          "RpgAPI.dll": {}
+          "RpgApi.dll": {}
         }
       },
       "Azure.Core/1.38.0": {
@@ -1025,7 +1025,7 @@
     }
   },
   "libraries": {
-    "RpgAPI/1.0.0": {
+    "RpgApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

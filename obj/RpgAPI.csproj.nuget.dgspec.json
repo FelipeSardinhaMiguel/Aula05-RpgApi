@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgAPI.csproj": {}
+    "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgApi.csproj": {}
   },
   "projects": {
-    "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgAPI.csproj": {
+    "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgAPI.csproj",
-        "projectName": "RpgAPI",
-        "projectPath": "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgAPI.csproj",
+        "projectUniqueName": "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgApi.csproj",
+        "projectName": "RpgApi",
+        "projectPath": "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\RpgApi.csproj",
         "packagesPath": "D:\\NugetPackages",
         "outputPath": "D:\\2DS\\Felipe2DS\\DS\\RpgAPI\\obj\\",
         "projectStyle": "PackageReference",

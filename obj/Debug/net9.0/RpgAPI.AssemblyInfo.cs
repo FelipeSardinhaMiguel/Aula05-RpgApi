@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("RpgAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("RpgApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7914a61d3c27d341851c1bec15e4c30a340a295")]
-[assembly: System.Reflection.AssemblyProductAttribute("RpgAPI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("RpgAPI")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d32116a711aad22469700267ab6e58e7e8d9e8")]
+[assembly: System.Reflection.AssemblyProductAttribute("RpgApi")]
+[assembly: System.Reflection.AssemblyTitleAttribute("RpgApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

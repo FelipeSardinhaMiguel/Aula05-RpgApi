@@ -18,6 +18,11 @@ namespace RpgAPI.Models
         /*public stiring Raca { get; set; } = string.Empty*/
         
         public ClasseEnum Classe { get; set; }
+        public byte[]? FotoPersonagem { get; set; }
+        public int? UsuarioId { get; set; }
+        public Usuario? Usuario { get; set; }
+    
+        
         
 
     }

@@ -1,4 +1,5 @@
-﻿IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+﻿/*Tabela Personagens*/
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
 BEGIN
     CREATE TABLE [__EFMigrationsHistory] (
         [MigrationId] nvarchar(150) NOT NULL,
@@ -8,6 +9,7 @@ BEGIN
 END;
 GO
 
+/*Tabela Armas*/
 BEGIN TRANSACTION;
 CREATE TABLE [TB_ARMAS] (
     [Id] int NOT NULL IDENTITY,
@@ -17,6 +19,7 @@ CREATE TABLE [TB_ARMAS] (
     CONSTRAINT [PK_TB_ARMAS] PRIMARY KEY ([Id])
 );
 
+/*Tabela Personagens*/
 CREATE TABLE [TB_PERSONAGENS] (
     [Id] int NOT NULL IDENTITY,
     [Nome] nvarchar(max) NOT NULL,
@@ -28,6 +31,7 @@ CREATE TABLE [TB_PERSONAGENS] (
     CONSTRAINT [PK_TB_PERSONAGENS] PRIMARY KEY ([Id])
 );
 
+/*Tabela Armas*/
 IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Dano', N'Nome', N'Tipo') AND [object_id] = OBJECT_ID(N'[TB_ARMAS]'))
     SET IDENTITY_INSERT [TB_ARMAS] ON;
 INSERT INTO [TB_ARMAS] ([Id], [Dano], [Nome], [Tipo])
@@ -41,6 +45,7 @@ VALUES (1, 38, N'Treisoitão', N'Meido Alcance'),
 IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Dano', N'Nome', N'Tipo') AND [object_id] = OBJECT_ID(N'[TB_ARMAS]'))
     SET IDENTITY_INSERT [TB_ARMAS] OFF;
 
+/*Tabela Personagens*/
 IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Classe', N'Defesa', N'Forca', N'Inteligencia', N'Nome', N'PontosVida') AND [object_id] = OBJECT_ID(N'[TB_PERSONAGENS]'))
     SET IDENTITY_INSERT [TB_PERSONAGENS] ON;
 INSERT INTO [TB_PERSONAGENS] ([Id], [Classe], [Defesa], [Forca], [Inteligencia], [Nome], [PontosVida])
@@ -54,6 +59,7 @@ VALUES (1, 1, 23, 17, 33, N'Frodo', 100),
 IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Classe', N'Defesa', N'Forca', N'Inteligencia', N'Nome', N'PontosVida') AND [object_id] = OBJECT_ID(N'[TB_PERSONAGENS]'))
     SET IDENTITY_INSERT [TB_PERSONAGENS] OFF;
 
+/*Tabela Personagens e Armas*/
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20250924012345_MigracaoArma', N'9.0.9');
 
